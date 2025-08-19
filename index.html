@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Detalhada: Ataque Cibernético ao Real Hospital Português</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS for animations and tweaks -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .slide-section {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 0.7s forwards;
+            transition: box-shadow 0.3s ease;
+        }
+        .slide-section:hover {
+            box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .staggered-item {
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideIn 0.5s forwards;
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-20">
+        <div class="container mx-auto px-6 py-5">
+            <h1 class="text-2xl md:text-4xl font-bold text-blue-900 text-center">
+                Análise de Caso: Ataque Cibernético ao RHP
+            </h1>
+            <p class="text-center text-gray-500 mt-1">Uma análise detalhada do incidente e suas lições.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-8">
+        <div class="space-y-16">
+
+            <!-- Slide 1: O Incidente -->
+            <section class="slide-section bg-white p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-blue-600">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4 flex items-center">
+                    <span class="text-4xl mr-3">🚨</span> 1. O Incidente: O Que Aconteceu?
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-lg text-slate-600 mb-4">
+                            No dia <strong>29 de agosto de 2024</strong>, o sistema nervoso digital do Real Hospital Português foi paralisado. Um ataque cibernético explorou brechas de segurança, causando um "apagão" em serviços essenciais e expondo a fragilidade da infraestrutura de TI.
+                        </p>
+                        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 mt-4">
+                            <h3 class="font-semibold text-slate-800 mb-3">Impacto Direto na Operação:</h3>
+                            <ul class="space-y-2 text-slate-700">
+                                <li class="flex items-start"><span class="mr-2">🗓️</span> <strong>Agendamentos:</strong> Pacientes não conseguiam marcar consultas ou exames.</li>
+                                <li class="flex items-start"><span class="mr-2">📋</span> <strong>Resultados:</strong> Médicos ficaram sem acesso a laudos e resultados de exames recentes.</li>
+                                <li class="flex items-start"><span class="mr-2">📦</span> <strong>Estoque:</strong> O controle de medicamentos e materiais foi comprometido, gerando risco de desabastecimento.</li>
+                                 <li class="flex items-start"><span class="mr-2">👤</span> <strong>Acessos:</strong> O sistema da portaria falhou, dificultando o controle de entrada e saída.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/EBF4FF/1E40AF?text=Hospital+Sob+Ataque" alt="Imagem representando um hospital com um alerta digital" class="rounded-lg shadow-md w-full h-auto">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2: As Causas -->
+            <section class="slide-section bg-white p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-yellow-500">
+                <h2 class="text-3xl font-bold text-slate-900 mb-6 flex items-center">
+                    <span class="text-4xl mr-3">🔍</span> 2. A Raiz do Problema: Por Que Aconteceu?
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Causa 1 -->
+                    <div class="staggered-item bg-yellow-50 p-4 rounded-lg border border-yellow-200" style="animation-delay: 0.2s;">
+                        <h3 class="font-bold text-yellow-800 text-lg mb-2 flex items-center"><span class="text-2xl mr-2">🐛</span> Software Vulnerável</h3>
+                        <p class="text-sm text-slate-700">Sistemas operacionais ou de gestão hospitalar sem as últimas atualizações de segurança são como portas abertas para invasores.</p>
+                    </div>
+                    <!-- Causa 2 -->
+                    <div class="staggered-item bg-yellow-50 p-4 rounded-lg border border-yellow-200" style="animation-delay: 0.4s;">
+                        <h3 class="font-bold text-yellow-800 text-lg mb-2 flex items-center"><span class="text-2xl mr-2">🎣</span> Phishing</h3>
+                        <p class="text-sm text-slate-700">Um e-mail falso, aparentemente legítimo, pode ter enganado um funcionário a clicar em um link malicioso, entregando as "chaves" da rede.</p>
+                    </div>
+                    <!-- Causa 3 -->
+                    <div class="staggered-item bg-yellow-50 p-4 rounded-lg border border-yellow-200" style="animation-delay: 0.6s;">
+                        <h3 class="font-bold text-yellow-800 text-lg mb-2 flex items-center"><span class="text-2xl mr-2">🕵️</span> Falha na Detecção</h3>
+                        <p class="text-sm text-slate-700">A ausência de um sistema de monitoramento ativo permitiu que o invasor agisse por tempo indeterminado antes de ser notado.</p>
+                    </div>
+                    <!-- Causa 4 -->
+                    <div class="staggered-item bg-yellow-50 p-4 rounded-lg border border-yellow-200" style="animation-delay: 0.8s;">
+                        <h3 class="font-bold text-yellow-800 text-lg mb-2 flex items-center"><span class="text-2xl mr-2">🖱️</span> Erro Humano</h3>
+                        <p class="text-sm text-slate-700">O uso de senhas fracas, repetidas ou o uso de dispositivos pessoais inseguros na rede corporativa podem ter sido o ponto de partida.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3: As Consequências -->
+            <section class="slide-section bg-white p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-red-600">
+                <h2 class="text-3xl font-bold text-slate-900 mb-6 flex items-center">
+                    <span class="text-4xl mr-3">💥</span> 3. O Efeito Dominó: As Consequências
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="staggered-item bg-red-50 p-5 rounded-lg border border-red-200" style="animation-delay: 0.2s;">
+                        <h3 class="font-bold text-red-800 text-xl mb-2">Caos Operacional ⏳</h3>
+                        <p class="text-slate-700">A equipe teve que voltar a usar papel e caneta. Isso gerou filas, atrasos críticos em diagnósticos e um ambiente de alta tensão, afetando a qualidade do atendimento.</p>
+                    </div>
+                    <div class="staggered-item bg-red-50 p-5 rounded-lg border border-red-200" style="animation-delay: 0.4s;">
+                        <h3 class="font-bold text-red-800 text-xl mb-2">Prejuízo Financeiro 💸</h3>
+                        <p class="text-slate-700">Os custos foram enormes: contratação de empresas de cibersegurança, investimento emergencial em novos softwares, possíveis multas pela LGPD e perda de receita com atendimentos cancelados.</p>
+                    </div>
+                    <div class="staggered-item bg-red-50 p-5 rounded-lg border border-red-200" style="animation-delay: 0.6s;">
+                        <h3 class="font-bold text-red-800 text-xl mb-2">Risco Humano e de Dados ❤️‍🩹</h3>
+                        <p class="text-slate-700">O mais grave: a demora no acesso a prontuários colocou vidas em risco. Além disso, o vazamento de dados médicos sensíveis expôs pacientes a fraudes e violação de privacidade.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 4: As Lições -->
+            <section class="slide-section bg-white p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-green-600">
+                 <h2 class="text-3xl font-bold text-slate-900 mb-4 flex items-center">
+                    <span class="text-4xl mr-3">💡</span> 4. Lições Para o Futuro
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0FDF4/15803D?text=Construindo+Defesas" alt="Imagem representando um escudo protegendo dados" class="rounded-lg shadow-md w-full h-auto">
+                    </div>
+                    <div>
+                        <p class="text-lg text-slate-600 mb-4">
+                            Este incidente não deve ser visto apenas como uma crise, mas como um catalisador para mudanças profundas na forma como o setor de saúde encara a segurança digital.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="staggered-item flex items-start space-x-3 p-3 bg-green-50 border border-green-200 rounded-md" style="animation-delay: 0.2s;">
+                                <span class="font-bold text-green-700 text-xl">🛡️</span>
+                                <p><strong>Cultura de Segurança:</strong> A segurança digital deve ser responsabilidade de todos, do TI à recepção, e não apenas um item no checklist.</p>
+                            </div>
+                             <div class="staggered-item flex items-start space-x-3 p-3 bg-green-50 border border-green-200 rounded-md" style="animation-delay: 0.4s;">
+                                <span class="font-bold text-green-700 text-xl">👨‍🏫</span>
+                                <p><strong>Treinamento Contínuo:</strong> Realizar simulações de phishing e treinamentos regulares para que a equipe saiba identificar e reagir a ameaças.</p>
+                            </div>
+                             <div class="staggered-item flex items-start space-x-3 p-3 bg-green-50 border border-green-200 rounded-md" style="animation-delay: 0.6s;">
+                                <span class="font-bold text-green-700 text-xl">🔄</span>
+                                <p><strong>Investimento Proativo:</strong> Atualizar sistemas e investir em ferramentas de monitoramento não é custo, é investimento na continuidade do serviço e na segurança do paciente.</p>
+                            </div>
+                             <div class="staggered-item flex items-start space-x-3 p-3 bg-green-50 border border-green-200 rounded-md" style="animation-delay: 0.8s;">
+                                <span class="font-bold text-green-700 text-xl">🤝</span>
+                                <p><strong>Plano de Resposta:</strong> Ter um plano claro de como agir durante um ataque é crucial para minimizar os danos e restaurar os serviços rapidamente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 px-4 mt-8">
+        <p class="text-sm text-slate-500">
+            Apresentação gerada com base no documento "Falha em Software - Ataque Cibernético ao Real Hospital Português (Recife)".
+        </p>
+    </footer>
+
+</body>
+</html>
